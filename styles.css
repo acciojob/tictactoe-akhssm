@@ -1,1 +1,97 @@
-/*  your css code here. If applicable */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 30px 20px;
+  background: #ffffff;
+  font-family: "Comic Sans MS", "Brush Script MT", cursive, sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+
+.container {
+  width: 360px;              
+  margin: 0 auto;
+}
+
+.player-inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.player-inputs input {
+  width: 140px;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.player-inputs button {
+  padding: 10px 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.title {
+  margin: 6px 0 8px 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+.message {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.board {
+  width: 100%;
+  max-width: 300px;          
+  margin: 0 auto;
+  border: 2px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;                     
+  background: #000;          
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f7c9cf;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+  user-select: none;
+}
+
+.cell:hover {
+  filter: brightness(0.98);
+}
+
+
+.cell.win {
+  background-color: #5b1271;  
+  color: #fff;
+}
+
+
+.restart {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
