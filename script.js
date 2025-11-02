@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = document.getElementById("submit");
   const player1Input = document.getElementById("player1");
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let player1 = "";
   let player2 = "";
   let currentPlayer = "";
-  let currentSymbol = "X";
+  let currentSymbol = "x";
   let board = Array(9).fill("");
   let gameActive = true;
 
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     currentPlayer = player1;
-    currentSymbol = "X";
+    currentSymbol = "x";
     gameActive = true;
     messageDiv.textContent = `${currentPlayer}, you're up!`;
   });
@@ -70,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      currentSymbol = currentSymbol === "X" ? "O" : "X";
+      currentSymbol = currentSymbol === "x" ? "o" : "x";
       currentPlayer = currentPlayer === player1 ? player2 : player1;
       messageDiv.textContent = `${currentPlayer}, you're up!`;
     });
